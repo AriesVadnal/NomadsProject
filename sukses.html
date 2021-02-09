@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.css">
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;600;700;800&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/xzoom/xzoom.css">
+    <link rel="stylesheet" href="assets/gijgo/css/gijgo.min.css">
+
+    
+</head>
+<body>
+    
+
+  <!-- Navigation -->
+    <div class="container">
+        <nav class="row navbar navbar-expand-lg navbar-light bg-white">
+            <div class="navbar-nav ml-auto mr-auto mr--sm-auto mr-lg-0 mr-md-auto">
+              <a href="index.html" class="navbar-brand">
+                <img src="assets/images/logo_nomads@2x.png" alt="">
+              </a>
+            </div>
+
+            <ul class="navbar-nav mr-auto d-none d-lg-block">
+              <li>
+                <span class="text-muted">
+                  | &nbsp; Beyond the explore of the world
+                </span>
+              </li>
+            </ul>
+        </nav>
+    </div>
+    <!-- End Navigation -->
+
+
+    <main>
+      <section class="section-success d-flex align-center">
+        <div class="col text-center">
+          <img src="assets/images/email@2x.png" alt="" width="270">
+          <h1>Yay! Success</h1>
+          <p>We’ve send email for trip interaction <br>
+            Please read it as well</p>
+            <a href="index.html" class="btn btn-home-page mt-3 px-5">Home Page</a>
+        </div>
+      </section>
+    </main>
+
+
+    <script src="assets/js/jquery-3.5.1.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/retina/retina.min.js"></script>
+    <script src="assets/xzoom/xzoom.min.js"></script>
+    <script src="assets/gijgo/js/gijgo.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.xzoom, .xzoom-gallery').xzoom({
+          zoomWidth: 500,
+          title: false,
+          tint: '#333',
+          xoffset: 15
+        })
+
+        $('.datepicker').datepicker({
+          uiLibrary: 'bootstrap4',
+          icons: {
+            rightIcon: '<img src="assets/images/ic@2x.png" / width="15">'
+          }
+        })
+      });
+    </script>
+</body>
+</html>
